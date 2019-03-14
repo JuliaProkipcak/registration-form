@@ -1,3 +1,32 @@
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn {
+  color: #fff;
+  border-radius: 3px;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .space-left {
+    padding-left: .5em;
+  }
+
+  .space-right {
+    padding-right: .5em;
+  }
+
+}
+
+h1 {
+  border-bottom: solid 1px #000;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.content {
+  background-color: #fff;
 }

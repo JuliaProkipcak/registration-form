@@ -11,56 +11,60 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-  <section>
-    <div class="grid">
-      <div class="unit xs-1 s-1 m-1 l-1">
-        <h1>Want to go to Mars?</h1>
-        <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-      </div>
+  <section class="pad-t-2 gutter max-length content">
 
-      <form method="POST" action="https://formspree.io/prok0018@algonquinlive.com">
-        <div class="unit xs-1 s-1 m-1 l-1">
-          <h2>Personal details</h2>
-        </div>
+    <div>
+      <h1 class="not-bold">Want to go to Mars?</h1>
+      <p class="mega pad-0">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+    </div>
 
-        <div class="unit xs-1 s-1 m-1-2 l-1-2">
-          <label for="name">Name</label>
-          <input id="name" required>
-        </div>
-        <div class="unit xs-1 s-1 m-1-2 l-1-2">
-          <label for="age">Age</label>
-          <input id="age" required>
-        </div>
-        <div class="unit xs-1 s-1 m-1-2 l-1-2">
-          <label for="email">Email</label>
-          <input id="email" type="email" required>
-        </div>
-        <fieldset class="unit xs-1 s-1 m-1-2 l-1-2">
-          <legend>Physical fitness</legend>
-          <select id="subject">
-            <option>Super-human</option>
-            <option>Fit as a fiddle</option>
-            <option>Not terribly strong</option>
-            <option>A little couch-potato-y</option>
-          </select>
-        </fieldset>
-        <div class="unit xs-1 s-1 m-1 l-1">
-          <label for="address">Address</label>
-          <textarea id="address" name="message" required></textarea>
-        </div>
-        <div class="unit xs-1 s-1 m-1 l-1">
-          <h2>Mission statement</h2>
-        </div>
+    <form method="POST" action="https://formspree.io/prok0018@algonquinlive.com">
 
-        <div class="unit xs-1 s-1 m-1 l-1">
+      <fieldset class="unit xs-1 s-1 m-1 l-1">
+        <legend class="not-bold italic giga push-3-4">Personal details</legend>
+        <div class="grid">
+          <div class="unit xs-1 s-1 m-1 l-1-2 pad-b space-left">
+            <label for="name">Name</label>
+            <input id="name" required>
+          </div>
+          <div class="unit xs-1 s-1 m-1 l-1-2 pad-b space-right">
+            <label for="age">Age</label>
+            <input id="age" required>
+          </div>
+          <div class="unit xs-1 s-1 m-1 l-1-2 pad-b space-left">
+            <label for="email">Email</label>
+            <input id="email" type="email" required>
+          </div>
+          <div class="unit xs-1 s-1 m-1 l-1-2 pad-b space-right">
+            <label for="subject">Physical fitness</label>
+            <select id="subject" name="subject">
+              <option>Super-human</option>
+              <option>Fit as a fiddle</option>
+              <option>Not terribly strong</option>
+              <option>A little couch-potato-y</option>
+            </select>
+          </div>
+          <div class="unit xs-1 s-1 m-1 l-1">
+            <label for="address">Address</label>
+            <textarea id="address" name="message" required></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="unit xs-1 s-1 m-1 l-1">
+        <legend class="not-bold italic giga push-1-2">Mission statement</legend>
+        <div>
           <label for="details">Why do you want to go to Mars?</label>
           <textarea id="details" name="message" required></textarea>
         </div>
-        <div class="unit xs-1 s-1 m-1 l-1 btn">
-          <button type="submit">Register for the trip!</button>
-        </div>
-      </form>
-    </div>
+      </fieldset>
+
+      <div class="text-center btn bold">
+        <button type="submit">Register for the trip!</button>
+        <input id="subjects" type="hidden" name="_subject" value="Request to join the mission">
+      </div>
+
+    </form>
   </section>
 
 </body>
